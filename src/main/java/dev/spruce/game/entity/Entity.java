@@ -1,31 +1,24 @@
 package dev.spruce.game.entity;
 
+import com.raylib.Raylib.*;
+
 public abstract class Entity {
 
-    private float x, y;
+    protected Vector2 position;
 
-    public Entity(float x, float y) {
-        this.x = x;
-        this.y = y;
+    public Entity(Vector2 position) {
+        this.position = position;
     }
 
     public abstract void update();
     public abstract void render();
 
-    public float getX() {
-        return x;
+    public Vector2 getPosition() {
+        return position;
     }
 
-    public void setX(float x) {
-        this.x = x;
-    }
-
-    public float getY() {
-        return y;
-    }
-
-    public void setY(float y) {
-        this.y = y;
+    public void setPosition(Vector2 position) {
+        this.position = position;
     }
 }
 
