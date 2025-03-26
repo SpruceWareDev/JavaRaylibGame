@@ -4,7 +4,6 @@ import dev.spruce.game.state.StateManager;
 import dev.spruce.game.state.impl.GameState;
 
 import static com.raylib.Colors.RAYWHITE;
-import static com.raylib.Colors.VIOLET;
 import static com.raylib.Raylib.*;
 
 public class Game {
